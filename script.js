@@ -1,5 +1,5 @@
 var app = angular.module('portfolioApp', ["ngRoute"]);
-app.controller('portfolioApp', function($scope) {
+app.controller('appCtrl', function($scope) {
 
     app.config(function($routeProvider) {
         $routeProvider
