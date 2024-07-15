@@ -1,6 +1,6 @@
 var app = angular.module('portfolioApp', ["ngRoute"]);
 app.controller('appCtrl', function($scope) {
-
+$scope.greeting = 'something';
  
 });
 app.config(function($routeProvider) {
