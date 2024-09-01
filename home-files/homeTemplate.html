@@ -4,15 +4,22 @@
         <link rel="stylesheet" href="./css/template-styles.css">
         <style>
             /* Keyframes for zipper animation */
-            @keyframes zipper {
-              0% { transform: translateX(250%); }
-              100% { transform: translateX(-250%); }
-            }
-        
-            /* Applying the animation */
-            .animate-zipper {
-              animation: zipper 10s linear infinite;
-            }
+            @keyframes ticker {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Apply the animation */
+    .ticker-wrapper {
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .ticker-text {
+      display: inline-block;
+      animation: ticker 15s linear infinite;
+    }
           </style>
     </head>
     <body>
@@ -99,8 +106,8 @@
                     <button class="mb-8 border border-white-2 py-4 px-4">VIEW MORE</button>
                 </div>
 
-                <div class="flex justify-center my-8">
-                    <p class="mb-8 py-4 text-6xl text-white outlined-text animate-zipper">Client Testimonials</p>
+                <div class="ticker-wrapper flex justify-center my-8">
+                    <p class="mb-8 py-4 text-6xl text-white outlined-text ticker-text">Client Testimonials</p>
                 </div>
 
             </div>

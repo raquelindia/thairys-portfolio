@@ -1,6 +1,18 @@
 var app = angular.module('portfolioApp', ["ngRoute"]);
 app.controller('appCtrl', function($scope) {
 $scope.greeting = 'something';
+$scope.clientTestimonials = [
+{
+    name: 'John Doe',
+    company: 'Bike Dealer, Some Company',
+    text: 'This is the best videographer ever'
+},
+{
+    name: 'Jane Doe',
+    company: 'Motorcyclist, Some Other Company',
+    text: 'I said WOW!'
+}
+];
  
 });
 app.config(function($routeProvider) {
