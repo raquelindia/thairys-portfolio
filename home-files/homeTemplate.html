@@ -2,6 +2,18 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/template-styles.css">
+        <style>
+            /* Keyframes for zipper animation */
+            @keyframes zipper {
+              0% { transform: translateX(250%); }
+              100% { transform: translateX(-250%); }
+            }
+        
+            /* Applying the animation */
+            .animate-zipper {
+              animation: zipper 10s linear infinite;
+            }
+          </style>
     </head>
     <body>
         <div>
@@ -50,18 +62,52 @@
                 </div>
 
             </div>
+<!-- photos that are links-->
+            <div class="bg-black text-white">
 
-            <div class="bg-gray-200 text-white">
+                <div style=" display: flex; width: 100vw; height: 100%;">
+                    <!--first column-->
+                    <div>
+                        <div class="relative group"><img style="width: 100%; height: 200px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-20 text-2xl font-bold">PROJECT</p></div></div>
+                        <div class="relative group"><img style="width: 100%; height: 180px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-20 text-2xl font-bold">PROJECT</p></div></div>
+                        <div class="relative group"><img style="width: 100%; height: 220px;"  src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-20 text-2xl font-bold">PROJECT</p></div></div>
+                    </div>
+                    <!-- second column -->
+                    <div>
+                        <div class="relative group"><img style="width: 100%; height: 330px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
+                        <div class="relative group"><img style="width: 100%; height: 320px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
+                        <div class="relative group"><img style="width: 100%; height: 320px;"  src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
+                    </div>
 
-                <div style="height: 100px;">
-                    ervge
+                     <!-- third column -->
+                     <div>
+                        <div class="relative group"><img style="width: 100%; height: 280px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
+                        <div class="relative group"><img style="width: 100%;height: 280px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
+                        <div class="relative group"><img style="width: 100%; height: 290px;"  src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
+                    </div>
+
+                     <!-- fourth column -->
+                     <div>
+                        <div class="relative group"><img style="width: 100%; height: 150px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-16 text-2xl font-bold">PROJECT</p></div></div>
+                        <div class="relative group"><img style="width: 100%; height: 150px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-16 text-2xl font-bold">PROJECT</p></div></div>
+                        <div class="relative group"><img style="width: 100%; height: 150px;"  src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-16 text-2xl font-bold">PROJECT</p></div></div>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-center my-8">
+                    <button class="mb-8 border border-white-2 py-4 px-4">VIEW MORE</button>
+                </div>
+
+                <div class="flex justify-center my-8">
+                    <p class="mb-8 py-4 text-6xl animate-zipper">Client Testimonials</p>
                 </div>
 
             </div>
 
             <div class="bg-white text-black">
 
-               <div><h3 class="text-4xl font-bold">How can we take your business to the next level</h3></div>
+               <div class="flex justify-center"><h3 class="text-4xl font-bold">How can we take your business to the next level?</h3></div>
 
             </div>
 
