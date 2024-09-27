@@ -11,7 +11,13 @@ $scope.clientTestimonials = [
     name: 'Jane Doe',
     company: 'Motorcyclist, Some Other Company',
     text: 'I said WOW!'
-}
+},
+{
+    name: 'Sally Seashells',
+    company: 'Saleswoman, Seashell Distribution Company',
+    text: 'Thairy did a great job capturing the essence of seashell selling by the seashore! :D'
+},
+
 ];
  
 });
@@ -38,4 +44,17 @@ app.config(function($routeProvider) {
         controller: "appCtrl"
     });
     
-})
+});
+
+app.directive('clientTestimonials', function(){
+    return {
+        restrict: 'E',
+        templateUrl: 'home-files/components/reviewsComponent.html',
+        scope: {
+            name: "@",
+            company: "@",
+            text: "@"
+        },
+        controller: 'appCtrl'
+    };
+});

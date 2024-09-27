@@ -110,6 +110,10 @@
                     <p class="mb-8 py-4 text-6xl text-white outlined-text ticker-text">Client Testimonials</p>
                 </div>
 
+                <div ng-repeat="review in clientTestimonials">
+                    <client-testimonials class="flex" name="review.name" company="review.company" text="review.text"></client-testimonials>
+                </div>
+
             </div>
 
             <div class="bg-white text-black">
