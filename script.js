@@ -1,7 +1,7 @@
 var app = angular.module('portfolioApp', ["ngRoute"]);
 app.controller('appCtrl', function($scope) {
 $scope.greeting = 'something';
-$scope.clientTestimonials = [
+$scope.reviews = [
 {
     name: 'John Doe',
     company: 'Bike Dealer, Some Company',
@@ -51,10 +51,7 @@ app.directive('clientTestimonials', function(){
         restrict: 'E',
         templateUrl: 'home-files/components/reviewsComponent.html',
         scope: {
-            name: "@",
-            company: "@",
-            text: "@"
-        },
-        controller: 'appCtrl'
+            data: '='
+        }
     };
 });

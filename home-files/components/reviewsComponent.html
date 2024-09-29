@@ -5,18 +5,18 @@
     </head>
     <body>
         <div id="reviews-container">
-            <div id="review-header">
+            <div class="review-header">
                 <div>
                     <div><img style="border-radius: 50%;" src="" alt=""></div>
                 </div>
                 <div>
-                    <div><h2 class="text-white font-bold">{{review.name}}</h2></div>
-                    <div><h3 class="text-gray-300 font-bold">{{review.company}}</h3></div>
+                    <div><h2 class="text-white font-bold">{{ data.name }}</h2></div>
+                    <div><h3 class="text-gray-300 font-bold">{{ data.company }}</h3></div>
                 </div>
             </div>
 
-            <div id="review-text">
-                <div><p class="text-white">" {{review.text}} "</p></div>
+            <div class="review-text">
+                <div><p>" {{ data.text }} "</p></div>
             </div>
 
             <div><span style="color: #047857;" class="material-symbols-outlined">
