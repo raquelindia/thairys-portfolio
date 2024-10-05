@@ -106,23 +106,46 @@
                     <button class="mb-8 border border-white-2 py-4 px-4">VIEW MORE</button>
                 </div>
 
-                <div class="ticker-wrapper flex justify-center my-8">
+                <div class="ticker-wrapper flex justify-center mt-8">
                     <p class="mb-8 py-4 text-6xl text-white outlined-text ticker-text">Client Testimonials</p>
                 </div>
 
-                <div ng-repeat="data in reviews" style="display: flex; width: 50%; gap: 2%; margin-bottom: 5%;" class="border border-gray-500 border-2 rounded flex justify-center">
-                    <client-testimonials class="" style="width: 80%;" data="data"></client-testimonials>
+             
+
+            </div>
+
+           <div class="flex bg-black gap-8">
+            <div ng-repeat="data in reviews" style="display: flex; width: 50%; gap: 2%; margin-bottom: 5%; margin-top: 2%;" class="border border-gray-500 border-2 rounded flex justify-center">
+                <client-testimonials class="" style="width: 80%;" data="data"></client-testimonials>
+            </div>
+           </div>
+
+            <div class="bg-white text-black my-8">
+                <div>
+                    <div class="flex justify-center"><h3 class="text-5xl font-bold">How can we take your business to the next level?</h3></div>
                 </div>
-
-            </div>
-
-            <div class="bg-white text-black">
-
-               <div class="flex justify-center"><h3 class="text-4xl font-bold">How can we take your business to the next level?</h3></div>
+               
 
             </div>
 
 
+    <div class="flex justify-center gap-8 my-16" style="width: 100%;">
+        <div class="relative group border" style="width: 200px; height: 200px;">
+            <p class="text-black flex justify-center mt-20 text-2xl font-bold group-hover:text-white">ITEM 1</p><div class="absolute inset-0 bg-green-700 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center text-2xl font-bold mt-20">ITEM 1</p></div>
+            </div>
+
+
+
+       <div class="relative group border"  style="width: 200px; height: 200px;">
+            <p class="text-black flex justify-center mt-20 text-2xl font-bold group-hover:text-white">ITEM 2</p><div class="absolute inset-0 bg-green-700 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center text-2xl font-bold mt-20">ITEM 2</p></div>
+            </div>
+      
+            
+            <div class="relative group border"  style="width: 200px; height: 200px;">
+                <p class="text-black flex justify-center mt-20 text-2xl font-bold group-hover:text-white">ITEM 3</p><div class="absolute inset-0 bg-green-700 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center text-2xl font-bold mt-20">ITEM 3</p></div>
+
+                </div>
+    </div>
             <div class="bg-black text-white flex justify-center" >
 
                 <div class="flex justify-start gap-8 py-28">
@@ -134,13 +157,7 @@
 
             </div>
 
-            <div class="bg-gray-600 text-white">
-
-                <div style="height: 100px;">
-                    ervge
-                </div>
-
-            </div>
+            
         </div>
         
     </body>
