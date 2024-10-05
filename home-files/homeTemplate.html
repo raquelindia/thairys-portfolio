@@ -110,8 +110,8 @@
                     <p class="mb-8 py-4 text-6xl text-white outlined-text ticker-text">Client Testimonials</p>
                 </div>
 
-                <div ng-repeat="data in reviews" class="border border-gray-500 border-2 rounded">
-                    <client-testimonials class="flex flex-col" data="data"></client-testimonials>
+                <div ng-repeat="data in reviews" style="display: flex; width: 50%; gap: 2%; margin-bottom: 5%;" class="border border-gray-500 border-2 rounded flex justify-center">
+                    <client-testimonials class="" style="width: 80%;" data="data"></client-testimonials>
                 </div>
 
             </div>

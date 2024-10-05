@@ -5,9 +5,9 @@
     </head>
     <body>
         <div id="reviews-container">
-            <div class="review-header">
+            <div class="review-header flex gap-4 ">
                 <div>
-                    <div><img style="border-radius: 50%;" src="" alt=""></div>
+                    <div><img style="border-radius: 50%; width: 40px; height: 40px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt="Picture of reviewer"></div>
                 </div>
                 <div>
                     <div><h2 class="text-white font-bold">{{ data.name }}</h2></div>
@@ -15,11 +15,12 @@
                 </div>
             </div>
 
-            <div class="review-text">
+            <div class="review-text pl-12">
                 <div><p>" {{ data.text }} "</p></div>
             </div>
 
-            <div><span style="color: #047857;" class="material-symbols-outlined">
+            <div class="flex pl-14">
+                <span style="color: #047857;" class="material-symbols-outlined">
                 star
                 </span><span style="color: #047857;" class="material-symbols-outlined">
                     star
