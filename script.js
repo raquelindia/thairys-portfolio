@@ -1,6 +1,8 @@
 var app = angular.module('portfolioApp', ["ngRoute"]);
 app.controller('appCtrl', function($scope) {
 $scope.greeting = 'something';
+$scope.linkFilter = "all";
+
 $scope.reviews = [
 {
     name: 'John Doe',
@@ -19,6 +21,22 @@ $scope.reviews = [
 },
 
 ];
+
+$scope.showAll = function () {
+   $scope.linkFilter = "all";
+};
+
+$scope.showAutomotive = function () {
+    $scope.linkFilter = "automotive";
+};
+
+$scope.showRealEstate = function () {
+    $scope.linkFilter = "real estate";
+};
+
+$scope.showInterviews = function () {
+    $scope.linkFilter = "interviews";
+};
  
 });
 app.config(function($routeProvider) {

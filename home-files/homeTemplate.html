@@ -39,7 +39,7 @@
         
             <div class="bg-white">
           
-                    <div class="flex justify-center gap-4">
+                    <div class="flex justify-center gap-4 ">
                         <div><h2 class="font-extrabold text-2xl flex justify-center">PHOTOGRAPHER<br>
                             FILMAKER<br>
                             & EDITOR
@@ -60,11 +60,11 @@
                    </div>
 
                    <div class="flex justify-center gap-4">
-                    <div><button>All</button></div>
-                    <div><button>#Automotive</button></div>
-                    <div><button>#Interviews</button></div>
-                    <div><button>#Real Estate</button></div>
-                    <div><button>#To be decided...</button></div>
+                    <div><button ng-click="showAll()">All</button></div>
+                    <div><button ng-click="showAutomotive()">#Automotive</button></div>
+                    <div><button ng-click="showInterviews()">#Interviews</button></div>
+                    <div><button ng-click="showRealEstate()">#Real Estate</button></div>
+                    <div><button ng-click="showAll()">#To be decided...</button></div>
                    </div>
                 </div>
 
@@ -75,29 +75,29 @@
                 <div style=" display: flex; width: 100vw; height: 100%;">
                     <!--first column-->
                     <div>
-                        <div class="relative group"><img style="width: 100%; height: 200px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-20 text-2xl font-bold">PROJECT</p></div></div>
-                        <div class="relative group"><img style="width: 100%; height: 180px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-20 text-2xl font-bold">PROJECT</p></div></div>
-                        <div class="relative group"><img style="width: 100%; height: 220px;"  src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-20 text-2xl font-bold">PROJECT</p></div></div>
+                        <div ng-if="linkFilter == 'all' || linkFilter == 'automotive'" class="relative group"><img style="width: 100%; height: 200px;" src="https://images.pexels.com/photos/1416169/pexels-photo-1416169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-20 text-2xl font-bold">PROJECT</p></div></div>
+                        <div ng-if="linkFilter == 'all' || linkFilter == 'automotive'"  class="relative group"><img style="width: 100%; height: 180px;" src="https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-20 text-2xl font-bold">PROJECT</p></div></div>
+                        <div ng-if="linkFilter == 'all' || linkFilter == 'real estate'"  class="relative group"><img style="width: 100%; height: 220px;"  src="https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1200" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-20 text-2xl font-bold">PROJECT</p></div></div>
                     </div>
                     <!-- second column -->
                     <div>
-                        <div class="relative group"><img style="width: 100%; height: 330px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
-                        <div class="relative group"><img style="width: 100%; height: 320px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
-                        <div class="relative group"><img style="width: 100%; height: 320px;"  src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
+                        <div ng-if="linkFilter == 'all' || linkFilter == 'interviews'" class="relative group"><img style="width: 100%; height: 330px;" src="https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&w=1200" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
+                        <div ng-if="linkFilter == 'all' || linkFilter == 'automotive'"  class="relative group"><img style="width: 100%; height: 320px;" src="https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
+                        <div ng-if="linkFilter == 'all' || linkFilter == 'automotive'"  class="relative group"><img style="width: 100%; height: 320px;"  src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
                     </div>
 
                      <!-- third column -->
                      <div>
-                        <div class="relative group"><img style="width: 100%; height: 280px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
-                        <div class="relative group"><img style="width: 100%;height: 280px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
-                        <div class="relative group"><img style="width: 100%; height: 290px;"  src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
+                        <div ng-if="linkFilter == 'all' || linkFilter == 'automotive'"  class="relative group"><img style="width: 100%; height: 280px;" src="https://images.pexels.com/photos/529782/pexels-photo-529782.jpeg?auto=compress&cs=tinysrgb&w=1200" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
+                        <div ng-if="linkFilter == 'all' || linkFilter == 'automotive'"  class="relative group"><img style="width: 100%;height: 280px;" src="https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
+                        <div ng-if="linkFilter == 'all' || linkFilter == 'automotive'"  class="relative group"><img style="width: 100%; height: 290px;"  src="https://images.pexels.com/photos/356289/pexels-photo-356289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-32 text-2xl font-bold">PROJECT</p></div></div>
                     </div>
 
                      <!-- fourth column -->
                      <div>
-                        <div class="relative group"><img style="width: 100%; height: 150px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-16 text-2xl font-bold">PROJECT</p></div></div>
-                        <div class="relative group"><img style="width: 100%; height: 150px;" src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-16 text-2xl font-bold">PROJECT</p></div></div>
-                        <div class="relative group"><img style="width: 100%; height: 150px;"  src="https://i0.wp.com/sunrisedaycamp.org/wp-content/uploads/2020/10/placeholder.png?ssl=1" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-16 text-2xl font-bold">PROJECT</p></div></div>
+                        <div ng-if="linkFilter == 'all' || linkFilter == 'real estate'"  class="relative group"><img style="width: 100%; height: 150px;" src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-16 text-2xl font-bold">PROJECT</p></div></div>
+                        <div ng-if="linkFilter == 'all' || linkFilter == 'automotive'"  class="relative group"><img style="width: 100%; height: 150px;" src="https://images.pexels.com/photos/19411359/pexels-photo-19411359/free-photo-of-man-riding-a-bicycle.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-16 text-2xl font-bold">PROJECT</p></div></div>
+                        <div ng-if="linkFilter == 'all' || linkFilter == 'interviews'"  class="relative group"><img style="width: 100%; height: 150px;"  src="https://images.pexels.com/photos/2041396/pexels-photo-2041396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""><div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-50 transition-opacity"><p class="text-white flex justify-center mt-16 text-2xl font-bold">PROJECT</p></div></div>
                     </div>
 
                 </div>
