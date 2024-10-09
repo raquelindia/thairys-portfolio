@@ -1,0 +1,11 @@
+.arrow-button {
+    padding: 10px 18px; /* Regular padding */
+    border-radius: 50%;
+    background-color: #047857;
+    transition: padding 0.2s ease; /* Smooth transition */
+
+}
+
+.arrow-button:hover {
+    padding: 13px 22px;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./css/template-styles.css">
+        <link rel="stylesheet" href="./home-files/css/template-styles.css">
         <style>
             /* Keyframes for zipper animation */
             @keyframes ticker {
@@ -28,9 +28,13 @@
                 <div class="flex flex-col justify-center py-32">
                 <div class="pb-4"><h1 class="font-bold text-3xl">We make brands {{ greeting }}</h1></div>
                 <div class="flex justify-center">
-                    <div style="border-radius: 50%; height: 25px; width: 25px; background-color: #047857;"><button><span class="material-symbols-outlined">
-                        keyboard_arrow_down
-                        </span></button></div>
+                    <div class="arrow-button">
+                        <button class="mt-2 text-white">
+                            <span class="material-symbols-outlined text-3xl">
+                                keyboard_arrow_down
+                            </span>
+                        </button>
+                    </div>
                 </div>
 
 
@@ -39,8 +43,8 @@
         
             <div class="bg-white">
           
-                    <div class="flex justify-center gap-4 ">
-                        <div><h2 class="font-extrabold text-2xl flex justify-center">PHOTOGRAPHER<br>
+                    <div class="flex justify-end gap-4 ">
+                        <div class="mt-8"><h2 class="font-extrabold text-2xl flex justify-center">PHOTOGRAPHER<br>
                             FILMAKER<br>
                             & EDITOR
                         </h2></div>
